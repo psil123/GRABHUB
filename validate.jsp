@@ -30,7 +30,7 @@
 					//c++;
 					//out.println(pwd);
 					//out.println(val2);
-					if(pwd.equals(val2))
+					if(rs.getString(4).equals(val2))
 					{
 						  //String redirectURL = "http://localhost:8080/GRABHUB/Restaurants.html";
 						  //response.sendRedirect(redirectURL);
