@@ -10,7 +10,7 @@
 				//new com.mysql.jdbc.Driver();
 
 
-				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/grabhub?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "arjya", "arjya");
+				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/grabhub?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "pritam", "pritam");
 
 				Statement stmt = conn.createStatement();
 				String query,pwd;

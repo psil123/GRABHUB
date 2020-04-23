@@ -237,7 +237,7 @@
                                     type: "POST",
                                     url: "fixDBoy.jsp",
                                     cache: false,
-                                    data:"oid="+oid+"&eid="+dboy,
+                                    data:"oid="+oid+"&eid="+dboy+"&Xcoord="+document.getElementById('dX').innerText+"&Ycoord="+document.getElementById('dY').innerText,
                                     async:false,
                                     success: function(result)
                                     {
@@ -291,7 +291,7 @@
                 String val11=request.getParameter("rname");
                 Class.forName("com.mysql.jdbc.Driver");
 
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "arjya", "arjya");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "pritam", "pritam");
 
                 Statement stmt = conn.createStatement();
                 String strQuery = "SELECT * FROM restaurant WHERE Restaurant_Name=\'"+val11+"\'";
@@ -332,6 +332,8 @@
       function getRoute(end)
       {
         // make directions request using cycling profile
+        $("#dX").html(end[0]);
+        $("#dY").html(end[1]);
         var url =
           'https://api.mapbox.com/directions/v5/mapbox/driving/' +
           start[0] +
@@ -524,7 +526,7 @@
                 String val1=request.getParameter("rname");
                 Class.forName("com.mysql.jdbc.Driver");
 
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "arjya", "arjya");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "pritam", "pritam");
 
                 Statement stmt = conn.createStatement();
                 int rid=-1;
@@ -611,6 +613,8 @@
           </center>
                 <p id="oid" hidden></p>
                 <p id="dboy" hidden></p>
+                <p id="dX" hidden></p>
+                <p id="dY" hidden></p>
         </section>
 </div>
 </body>

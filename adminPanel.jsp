@@ -403,7 +403,7 @@
                 String val11=request.getParameter("rname");
                 Class.forName("com.mysql.jdbc.Driver");
 
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "arjya", "arjya");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "pritam", "pritam");
 
                 Statement stmt = conn.createStatement();
                 String strQuery = "SELECT * FROM employee ";
@@ -440,7 +440,7 @@
                 String val11=request.getParameter("rname");
                 Class.forName("com.mysql.jdbc.Driver");
 
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "arjya", "arjya");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "pritam", "pritam");
 
                 Statement stmt = conn.createStatement();
                 String strQuery = "SELECT * FROM users ";
@@ -485,7 +485,7 @@
                 String val11=request.getParameter("rname");
                 Class.forName("com.mysql.jdbc.Driver");
 
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "arjya", "arjya");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "pritam", "pritam");
 
                 Statement stmt = conn.createStatement();
                 String strQuery = "SELECT * FROM restaurant ";
@@ -524,7 +524,7 @@
                 String val11=request.getParameter("rname");
                 Class.forName("com.mysql.jdbc.Driver");
 
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "arjya", "arjya");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "pritam", "pritam");
 
                 Statement stmt = conn.createStatement();
                 String strQuery = "SELECT * FROM menu ";
@@ -561,7 +561,7 @@
                 String val11=request.getParameter("rname");
                 Class.forName("com.mysql.jdbc.Driver");
 
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "arjya", "arjya");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "pritam", "pritam");
 
                 Statement stmt = conn.createStatement();
                 String strQuery = "SELECT * FROM orders ";
@@ -595,7 +595,7 @@
                 String val11=request.getParameter("rname");
                 Class.forName("com.mysql.jdbc.Driver");
 
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "arjya", "arjya");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "pritam", "pritam");
 
                 Statement stmt = conn.createStatement();
                 String strQuery = "SELECT * FROM feedback ";

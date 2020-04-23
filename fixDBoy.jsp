@@ -6,11 +6,10 @@
 			  	int eid=Integer.parseInt(request.getParameter("eid"));
 				Class.forName("com.mysql.jdbc.Driver");
 
-				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "arjya", "arjya");
+				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "pritam", "pritam");
 
 				Statement stmt = conn.createStatement();
-				
-				String strQuery = "INSERT INTO Delivery values("+oid+","+eid+")";
+				String strQuery = "INSERT INTO Delivery values("+oid+","+eid+","+Double.parseDouble(request.getParameter("Xcoord"))+","+Double.parseDouble(request.getParameter("Ycoord"))+")";
 				stmt.executeUpdate(strQuery);
 
 				strQuery = "Update Employee SET Busy=1 WHERE EID="+eid;

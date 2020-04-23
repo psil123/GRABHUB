@@ -4,7 +4,7 @@
 			  {	
 				Class.forName("com.mysql.jdbc.Driver");
 
-				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "arjya", "arjya");
+				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "pritam", "pritam");
 				String val1=request.getParameter("rname");
 				Statement stmt = conn.createStatement();
 				String strQuery = "SELECT rid FROM restaurant where Restaurant_Name=\'"+val1+"\'";

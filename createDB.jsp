@@ -7,7 +7,7 @@
 				//new com.mysql.jdbc.Driver();
 
 
-				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/grabhub?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "arjya", "arjya");
+				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/grabhub?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "pritam", "pritam");
 
 				Statement stmt = conn.createStatement();
 
@@ -31,7 +31,7 @@
 				create="CREATE TABLE IF NOT EXISTS Orders(OID INT(6) NOT NULL ,UID INT(6) NOT NULL ,RID INT(6) NOT NULL ,IID INT(6) NOT NULL ,Qty INT(6) NOT NULL,PRIMARY KEY(OID,UID,RID,IID),CONSTRAINT FOREIGN KEY (UID) REFERENCES Users(UID),CONSTRAINT FOREIGN KEY (RID,IID) REFERENCES Menu(RID,IID))";
                                 stmt.executeUpdate(create);
 
-                                create="CREATE TABLE IF NOT EXISTS Delivery(OID INT(6) NOT NULL ,EID INT(6) NOT NULL ,PRIMARY KEY(OID,EID),CONSTRAINT FOREIGN KEY (OID) REFERENCES Orders(OID),CONSTRAINT FOREIGN KEY (EID) REFERENCES Employee(EID))";
+                                create="CREATE TABLE IF NOT EXISTS Delivery(OID INT(6) NOT NULL ,EID INT(6) NOT NULL ,Xcoord DOUBLE NOT NULL,Ycoord DOUBLE NOT NULL,PRIMARY KEY(OID,EID),CONSTRAINT FOREIGN KEY (OID) REFERENCES Orders(OID),CONSTRAINT FOREIGN KEY (EID) REFERENCES Employee(EID))";
                                 stmt.executeUpdate(create);
 
 				create="INSERT INTO Employee values	(1,\'Raj\',\'raj@grabhub.com\',\'raj\',\'Addr1\',\'7896543210\','A',1)";
