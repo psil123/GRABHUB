@@ -27,7 +27,9 @@
 
 				create="CREATE TABLE IF NOT EXISTS Menu(RID INT(6) NOT NULL ,IID INT(6) NOT NULL ,IName varchar(30) NOT NULL UNIQUE,IPrice INT(10) NOT NULL ,Description varchar(1000),img varchar(1000),PRIMARY KEY(RID,IID),CONSTRAINT FOREIGN KEY (RID)REFERENCES Restaurant(RID))";
 				stmt.executeUpdate(create);
-
+                                create="ALTER TABLE menu ADD COLUMN Veg INT DEFAULT 0";
+                                stmt.executeUpdate(create); 
+                                
 				create="CREATE TABLE IF NOT EXISTS Orders(OID INT(6) NOT NULL ,UID INT(6) NOT NULL ,RID INT(6) NOT NULL ,IID INT(6) NOT NULL ,Qty INT(6) NOT NULL,PRIMARY KEY(OID,UID,RID,IID),CONSTRAINT FOREIGN KEY (UID) REFERENCES Users(UID),CONSTRAINT FOREIGN KEY (RID,IID) REFERENCES Menu(RID,IID))";
                                 stmt.executeUpdate(create);
 
