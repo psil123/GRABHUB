@@ -27,7 +27,7 @@
 
 				create="CREATE TABLE IF NOT EXISTS Menu(RID INT(6) NOT NULL ,IID INT(6) NOT NULL ,IName varchar(30) NOT NULL UNIQUE,IPrice INT(10) NOT NULL ,Description varchar(1000),img varchar(1000),PRIMARY KEY(RID,IID),CONSTRAINT FOREIGN KEY (RID)REFERENCES Restaurant(RID))";
 				stmt.executeUpdate(create);
-                                create="ALTER TABLE menu ADD COLUMN Veg INT DEFAULT 0";
+                                create="ALTER TABLE menu ADD COLUMN NVeg INT DEFAULT 0";
                                 stmt.executeUpdate(create); 
                                 
 				create="CREATE TABLE IF NOT EXISTS Orders(OID INT(6) NOT NULL ,UID INT(6) NOT NULL ,RID INT(6) NOT NULL ,IID INT(6) NOT NULL ,Qty INT(6) NOT NULL,PRIMARY KEY(OID,UID,RID,IID),CONSTRAINT FOREIGN KEY (UID) REFERENCES Users(UID),CONSTRAINT FOREIGN KEY (RID,IID) REFERENCES Menu(RID,IID))";
@@ -72,83 +72,112 @@
 
 				
         //Cookie Cafe
-        create="INSERT INTO Menu values (4,1,\'Rainbow Pastry\',99,\'Rainbow PastrySix layers vanilla cream topped pastry\',\'rainbow.jpg\')";
+        create="INSERT INTO Menu values (4,1,\'Rainbow Pastry\',99,\'Rainbow PastrySix layers vanilla cream topped pastry\',\'rainbow.jpg\',1)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (4,2,\'BlackForest Cake\',499,\'2 kg chocolate cake topped with red cherries\',\'blackforest.jpg\')";
+        
+        create="INSERT INTO Menu values (4,2,\'BlackForest Cake\',499,\'2 kg chocolate cake topped with red cherries\',\'blackforest.jpg\',1)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (4,3,\'BlueBerry CheeseCake\',150,\'Cake\',\'blueberry_cheesecake.jpg\')";
+
+        create="INSERT INTO Menu values (4,3,\'BlueBerry CheeseCake\',150,\'Cake\',\'blueberry_cheesecake.jpg\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (4,4,\'Red Velvet Cake\',258,\'Cake\',\'redCake.jpg\')";
+
+        create="INSERT INTO Menu values (4,4,\'Red Velvet Cake\',258,\'Cake\',\'redCake.jpg\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (4,5,\'Mint Chocolate chip Smoothie\',109,\'Thick mint smoothie topped with chocolate chips\',\'Mint_Smoothie.jpg\')";
+
+        create="INSERT INTO Menu values (4,5,\'Mint Chocolate chip Smoothie\',109,\'Thick mint smoothie topped with chocolate chips\',\'Mint_Smoothie.jpg\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (4,6,\'RaspBerry Milk Shake\',109,\'Refreshing Raspberry smoothie\',\'berry1.jpg\')";
+
+        create="INSERT INTO Menu values (4,6,\'RaspBerry Milk Shake\',109,\'Refreshing Raspberry smoothie\',\'berry1.jpg\',0)";
         stmt.executeUpdate(create);
         
         //Fried N Grill
-        create="INSERT INTO Menu values (1,1,\'Lobstar Salad\',102,\'A light and refreshing lobster salad made with avocados,fresh vegis and fruits\',\'salad.jpg\')";
+        create="INSERT INTO Menu values (1,1,\'Lobster Salad\',102,\'A light and refreshing lobster salad made with avocados,fresh vegis and fruits\',\'salad.jpg\',1)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (1,2,\'Pork Tonkatsu\',102,\'Japanese Tonkatsu that consists of a breaded, deep-fried/tempura pork cutlet\',\'pork_Tonkatsu.jpeg\')";
+
+        create="INSERT INTO Menu values (1,2,\'Pork Tonkatsu\',102,\'Japanese Tonkatsu that consists of a breaded, deep-fried/tempura pork cutlet\',\'pork_Tonkatsu.jpeg\',1)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (1,3,\'Paneer Satay\',102,\'Soft paneer pieces roasted with bell pepper and onions\',\'PaneerSatay.JPG\')";
+
+        create="INSERT INTO Menu values (1,3,\'Paneer Satay\',102,\'Soft paneer pieces roasted with bell pepper and onions\',\'PaneerSatay.JPG\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (1,4,\'Grilled Octopus\',328,\'Octopus grilled with chili Herb oil\',\'octopus.jpg\')";
+
+        create="INSERT INTO Menu values (1,4,\'Grilled Octopus\',328,\'Octopus grilled with chili Herb oil\',\'octopus.jpg\',1)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (1,5,\'Cheesy Breadsticks\',258,\'Cheese topped healthy garlic bread\',\'cheesy_breadsticks.jpg\')";
+
+        create="INSERT INTO Menu values (1,5,\'Cheesy Breadsticks\',258,\'Cheese topped healthy garlic bread\',\'cheesy_breadsticks.jpg\'0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (1,6,\'Roasted Lamb\',549,\'Lamb breast roasted with wild garlic and Rosemary\',\'lamb.jpg\')";
+
+        create="INSERT INTO Menu values (1,6,\'Roasted Lamb\',549,\'Lamb breast roasted with wild garlic and Rosemary\',\'lamb.jpg\'1)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (1,7,\'Fresh Food Tart\',109,\'Fresh cut Strawberris, Blueberries, Raspberries, Kiwis and cherries\',\'freshfoodtart.jpg\')";
+
+        create="INSERT INTO Menu values (1,7,\'Fresh Food Tart\',109,\'Fresh cut Strawberris, Blueberries, Raspberries, Kiwis and cherries\',\'freshfoodtart.jpg\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (1,8,\'Red Velvet Pastry\',109,\'Desert\',\'redCake.jpg\')";
+
+        create="INSERT INTO Menu values (1,8,\'Red Velvet Pastry\',109,\'Desert\',\'redCake.jpg\',0)";
         stmt.executeUpdate(create);
 
         //The Disaster Cafe
-        create="INSERT INTO Menu values (2,1,\'Pea Myriad\',99,\'A jelly of fresh peas,drizzled with watercress ,topped with a poached egg and crunchy peas\',\'savoy.jpg\')";
+        create="INSERT INTO Menu values (2,1,\'Pea Myriad\',99,\'A jelly of fresh peas,drizzled with watercress ,topped with a poached egg and crunchy peas\',\'savoy.jpg\',1)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (2,2,\'Ravioli\',102,\'Crunchy from outside and soft from inside Wonton Wrapped veg Ravioli\',\'wontonWrapperRavioli.jpg\')";
+
+        create="INSERT INTO Menu values (2,2,\'Ravioli\',102,\'Crunchy from outside and soft from inside Wonton Wrapped veg Ravioli\',\'wontonWrapperRavioli.jpg\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (2,3,\'Fish Sizzler\',328,\'Spicy fish sizzler serverd with french fries,lime juice and meyo\',\'sizzler.jpg\')";
+
+        create="INSERT INTO Menu values (2,3,\'Fish Sizzler\',328,\'Spicy fish sizzler serverd with french fries,lime juice and meyo\',\'sizzler.jpg\',1)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (2,4,\'The Disaster Special Burger\',258,\'veg burger served with chips and meyo\',\'vegburger.jpg\')";
+
+        create="INSERT INTO Menu values (2,4,\'The Disaster Special Burger\',258,\'veg burger served with chips and meyo\',\'vegburger.jpg\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (2,5,\'Whole Chicken Roast\',549,\'mouth watering chicken roast served with brunt tomato and letus\',\'roastedchicken.jpg\')";
+
+        create="INSERT INTO Menu values (2,5,\'Whole Chicken Roast\',549,\'mouth watering chicken roast served with brunt tomato and letus\',\'roastedchicken.jpg\',1)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (2,6,\'Green Mousse\',109,\'Fluffy Green mousse prepared with avocado,green tea and mint\',\'musse.jpg\')";
+
+        create="INSERT INTO Menu values (2,6,\'Green Mousse\',109,\'Fluffy Green mousse prepared with avocado,green tea and mint\',\'musse.jpg\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (2,7,\'Ice Cream\',109,\'3 scoops:decorated with fresh berries\',\'ice.jpg\')";
+
+        create="INSERT INTO Menu values (2,7,\'Ice Cream\',109,\'3 scoops:decorated with fresh berries\',\'ice.jpg\',0)";
         stmt.executeUpdate(create);
 
 
         //Eat Meet
-        create="INSERT INTO Menu values (3,1,\'Shrimp Cocktail\',99,\'Shelled, cooked prawns in a cocktail sauce, served in a glass\',\'SHRIMP_COCKTAIL.jpg\')";
+        create="INSERT INTO Menu values (3,1,\'Shrimp Cocktail\',99,\'Shelled, cooked prawns in a cocktail sauce, served in a glass\',\'SHRIMP_COCKTAIL.jpg\',1)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (3,2,\'Veggie Stuffed Finger\',102,\'Deep fried finger stuffed with fresh veggies, Almonds closeup and Cream sauce\',\'finger.jpg\')";
+
+        create="INSERT INTO Menu values (3,2,\'Veggie Stuffed Finger\',102,\'Deep fried finger stuffed with fresh veggies, Almonds closeup and Cream sauce\',\'finger.jpg\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (3,3,\'Stuffed Squid\',328,\'Squid stuffed with olive, Spanish onion, garlic rice, tomatoes, mint leaves and parsley. Seasoned with black pepper and herbs\',\'stuffed_squid.jpeg\')";
+
+        create="INSERT INTO Menu values (3,3,\'Stuffed Squid\',328,\'Squid stuffed with olive, Spanish onion, garlic rice, tomatoes, mint leaves and parsley. Seasoned with black pepper and herbs\',\'stuffed_squid.jpeg\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (3,4,\'Lasagna\',258,\'Cheese Tomato veg lasagne\',\'veg_lasagna.jpg\')";
+
+        create="INSERT INTO Menu values (3,4,\'Lasagna\',258,\'Cheese Tomato veg lasagne\',\'veg_lasagna.jpg\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (3,5,\'Special Vegan Sandwich\',258,\'Sandwich\',\'vegan_sandwich.jpg\')";
+
+        create="INSERT INTO Menu values (3,5,\'Special Vegan Sandwich\',258,\'Sandwich\',\'vegan_sandwich.jpg\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (3,6,\'Pork Belly\',549,\'Well cooked whole pork belly served with honey lemon sauce\',\'Pork_Belly_JalapenoSlaw.jpg\')";
+
+        create="INSERT INTO Menu values (3,6,\'Pork Belly\',549,\'Well cooked whole pork belly served with honey lemon sauce\',\'Pork_Belly_JalapenoSlaw.jpg\',1)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (3,7,\'Mint Cheesecake Mousse\',119,\'A perfectly melt-in-your-mouth fluffy, deliciously minty, cheesecake flavored mousse\',\'mint_cheesecake_mousse.png\')";
+
+        create="INSERT INTO Menu values (3,7,\'Mint Cheesecake Mousse\',119,\'A perfectly melt-in-your-mouth fluffy, deliciously minty, cheesecake flavored mousse\',\'mint_cheesecake_mousse.png\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (3,8,\'Panna Cotta\',109,\'Italian dessert of sweetened cream thickened with gelatin and molded\',\'panna_cotta.jpg\')";
+
+        create="INSERT INTO Menu values (3,8,\'Panna Cotta\',109,\'Italian dessert of sweetened cream thickened with gelatin and molded\',\'panna_cotta.jpg\',0)";
         stmt.executeUpdate(create);
 
         //Biryani Hut
-        create="INSERT INTO Menu values (5,1,\'Special Mutton Biryani\',228,\'served with Raita\',\'mutton_biryani.jpg\')";
+        create="INSERT INTO Menu values (5,1,\'Special Mutton Biryani\',228,\'served with Raita\',\'mutton_biryani.jpg\',1)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (5,2,\'Veg Awadhi Biyani\',258,\'Biryani Only\',\'vegBir.jpg\')";
+
+        create="INSERT INTO Menu values (5,2,\'Veg Awadhi Biyani\',258,\'Biryani Only\',\'vegBir.jpg\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (5,3,\'Chicken Thali\',309,\'Butter chicken,Roti and salads\',\'butterchicken.jpg\')";
+
+        create="INSERT INTO Menu values (5,3,\'Chicken Thali\',309,\'Butter chicken,Roti and salads\',\'butterchicken.jpg\',1)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (5,4,\'Shahi Kesar Tukda\',119,\'Desert\',\'shahiTukda.jpg\')";
+
+        create="INSERT INTO Menu values (5,4,\'Shahi Kesar Tukda\',119,\'Desert\',\'shahiTukda.jpg\',0)";
         stmt.executeUpdate(create);
-        create="INSERT INTO Menu values (5,5,\'Pesta Phirni\',60,\'Desert\',\'kesar_phirni.jpg\')";
-				stmt.close();
+
+        create="INSERT INTO Menu values (5,5,\'Pesta Phirni\',60,\'Desert\',\'kesar_phirni.jpg\',0)";
+                                stmt.close();
 				conn.close();
 				  
 			  
