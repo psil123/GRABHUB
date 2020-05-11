@@ -63,12 +63,12 @@
 				stmt.executeUpdate(create);
 				create="INSERT INTO Restaurant values (2,\'The Disaster Cafe\',\'disaster@gmail.com\',\'Addr2\',\'8712456678\',\'Fast food,Burger\',\'img3.jpg\',\'4.2\',150,88.4287,22.6123)";
 				stmt.executeUpdate(create);
-				create="INSERT INTO Restaurant values (3,\'Eat Meet\',\'eatmeet@gmail.com\',\'Addr3\',\'8902456978\',\'Biryani,Mughlai\',\'images.jpg\',\'4.2\',270,88.4143,22.5841)";
-				stmt.executeUpdate(create);
+                                create="INSERT INTO Restaurant values (5,\'Biryani Hut\',\'biryanihut@gmail.com\',\'Addr5\',\'7712456078\',\'Italian,cafe\',\'images.jpg\',\'4.5\',580,88.4598,22.5881)";
+                                stmt.executeUpdate(create);
 				create="INSERT INTO Restaurant values (4,\'Cookie Cafe\',\'cookiecafe@gmail.com\',\'Addr4\',\'8710974678\',\'Dessert\',\'img4.jpg\',\'3.9\',70,88.3684,22.5896)";
 				stmt.executeUpdate(create);
-				create="INSERT INTO Restaurant values (5,\'Biryani Hut\',\'biryanihut@gmail.com\',\'Addr5\',\'7712456078\',\'Italian,cafe\',\'img5.jpg\',\'4.5\',580,88.4598,22.5881)";
-				stmt.executeUpdate(create);
+                                create="INSERT INTO Restaurant values (3,\'Eat Meet\',\'eatmeet@gmail.com\',\'Addr3\',\'8902456978\',\'Biryani,Mughlai\',\'img5.jpg\',\'4.2\',270,88.4143,22.5841)";
+                                stmt.executeUpdate(create);
 
 				
         //Cookie Cafe
@@ -103,10 +103,10 @@
         create="INSERT INTO Menu values (1,4,\'Grilled Octopus\',328,\'Octopus grilled with chili Herb oil\',\'octopus.jpg\',1)";
         stmt.executeUpdate(create);
 
-        create="INSERT INTO Menu values (1,5,\'Cheesy Breadsticks\',258,\'Cheese topped healthy garlic bread\',\'cheesy_breadsticks.jpg\'0)";
+        create="INSERT INTO Menu values (1,5,\'Cheesy Breadsticks\',258,\'Cheese topped healthy garlic bread\',\'cheesy_breadsticks.jpg\',0)";
         stmt.executeUpdate(create);
 
-        create="INSERT INTO Menu values (1,6,\'Roasted Lamb\',549,\'Lamb breast roasted with wild garlic and Rosemary\',\'lamb.jpg\'1)";
+        create="INSERT INTO Menu values (1,6,\'Roasted Lamb\',549,\'Lamb breast roasted with wild garlic and Rosemary\',\'lamb.jpg\',1)";
         stmt.executeUpdate(create);
 
         create="INSERT INTO Menu values (1,7,\'Fresh Food Tart\',109,\'Fresh cut Strawberris, Blueberries, Raspberries, Kiwis and cherries\',\'freshfoodtart.jpg\',0)";
