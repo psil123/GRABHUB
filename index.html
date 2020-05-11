@@ -153,6 +153,11 @@
                             localStorage["email"]=uname;
                             if(uname.includes("@grabhub.com"))
                                 location.href="http://localhost:8080/GRABHUB/adminPanel.jsp"
+                            else if(uname.includes("@delivery.grabhub.com"))
+                            {
+                            	localStorage["login"]=false;
+                            	location.href="http://localhost:8080/GRABHUB/index.html"
+                            }
                             else
                                 location.href="http://localhost:8080/GRABHUB/Restaurants.jsp"
                         }

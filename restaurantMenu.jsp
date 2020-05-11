@@ -539,7 +539,7 @@
                 rs = stmt.executeQuery(strQuery);
                 while(rs.next())
                 {
-                  out.println("<div  "+((Integer.parseInt(rs.getString(7))!=0)?"class=\"boxed\" id=\"nonv\"":"class=\"boxed2\"")+"><li><a><img class=\"shop-item-image\" src=\"resources/images/"+rs.getString(6)+"\" width=\"100\" height=\"100\" ><button class=\"button\" value=\"ADD\">ADD</button><span><h5><span class=\"shop-item-title\" iid=\'"+rs.getString(2)+"\'>"+rs.getString(3)+"<i>"+rs.getString(5)+"</i></span></h5><p><b><span class=\"shop-item-price\">Rs."+rs.getString(4)+"</span></b></p></li></div>");
+                  out.println("<div  "+((Integer.parseInt(rs.getString(7))!=0)?"class=\"boxed\" id=\"nonv\"":"class=\"boxed2\"")+"><li><a><img class=\"shop-item-image\" src=\"resources/images/"+rs.getString(6)+"\" width=\"100\" height=\"100\" ><button class=\"button\" value=\"ADD\">ADD</button><span><h5><span class=\"shop-item-title\" iid=\'"+rs.getString(2)+"\'>"+rs.getString(3)+"<i>("+rs.getString(5)+")</i></span></h5><p><b><span class=\"shop-item-price\">Rs."+rs.getString(4)+"</span></b></p></li></div>");
                 }
                 //out.println(oid);
                 response.setStatus(200);

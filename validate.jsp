@@ -14,7 +14,7 @@
 
 				Statement stmt = conn.createStatement();
 				String query,pwd;
-				if(val1.indexOf("@grabhub.com")!=-1)
+				if(val1.indexOf("@grabhub.com")!=-1 || val1.indexOf("@delivery.grabhub.com")!=-1)
 					query = "SELECT * FROM employee WHERE Email=\'"+val1+"\'";
 				else
 					query = "SELECT * FROM Users WHERE Email=\'"+val1+"\'";

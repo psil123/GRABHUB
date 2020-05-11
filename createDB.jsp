@@ -40,13 +40,13 @@
 				stmt.executeUpdate(create);
 				create="INSERT INTO Employee values	(2,\'Mike\',\'mike@grabhub.com\',\'mike\',\'Addr2\',\'8796543012\','M',1)";
 				stmt.executeUpdate(create);
-				create="INSERT INTO Employee values	(3,\'Smith\',\'smith@grabhub.com\',\'smith\',\'Addr3\',\'7689345210\','D',0)";
+				create="INSERT INTO Employee values	(3,\'Smith\',\'smith@delivery.grabhub.com\',\'smith\',\'Addr3\',\'7689345210\','D',0)";
 				stmt.executeUpdate(create);
-				create="INSERT INTO Employee values	(4,\'Prakash\',\'prakash@grabhub.com\',\'prakash\',\'Addr4\',\'7689345210\','D',0)";
+				create="INSERT INTO Employee values	(4,\'Prakash\',\'prakash@delivery.grabhub.com\',\'prakash\',\'Addr4\',\'7689345210\','D',0)";
 				stmt.executeUpdate(create);
-				create="INSERT INTO Employee values	(5,\'Ramesh\',\'ramesh@grabhub.com\',\'ramesh\',\'Addr5\',\'7689345210\','D',0)";
+				create="INSERT INTO Employee values	(5,\'Ramesh\',\'ramesh@delivery.grabhub.com\',\'ramesh\',\'Addr5\',\'7689345210\','D',0)";
 				stmt.executeUpdate(create);
-				create="INSERT INTO Employee values	(6,\'Zareen\',\'zareen@grabhub.com\',\'zareen\',\'Addr6\',\'7689345210\','D',0)";
+				create="INSERT INTO Employee values	(6,\'Zareen\',\'zareen@delivery.grabhub.com\',\'zareen\',\'Addr6\',\'7689345210\','D',0)";
 				stmt.executeUpdate(create);
 
 
