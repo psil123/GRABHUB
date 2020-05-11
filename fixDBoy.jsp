@@ -20,6 +20,15 @@
 				if(rs.next())
 					out.write(rs.getString(1));
 
+				out.write("(Phone:");
+
+				strQuery = "SELECT Phone FROM employee where eid="+eid;
+				ResultSet rs1 = stmt.executeQuery(strQuery);
+				if(rs1.next())
+					out.write(rs1.getString(1));
+
+				out.write(")");
+				
 				response.setStatus(200);
 				stmt.close();
 				conn.close();
