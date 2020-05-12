@@ -66,7 +66,7 @@
                  if(chkLoginStatus())  
                   return;
                 // Returns successful data submission message when the entered information is stored in database.
-                var dataString = 'resID='+ $("#resID").val()  + '&iname='+ $("#iname").val()  + '&iid='+ $("#iid").val() + '&iprice='+ $("#iprice").val()+"&iimg="+$("#iimg").val()+"&idesc="+$("#idesc").val()+"&formId=3";
+                var dataString = 'resID='+ $("#resID").val()  + '&iname='+ $("#iname").val()  + '&iid='+ $("#iid").val() + '&iprice='+ $("#iprice").val()+"&nveg="+$("#nveg").val()+"&iimg="+$("#iimg").val()+"&idesc="+$("#idesc").val()+"&formId=3";
                 	//alert(dataString);
                 // AJAX Code To Submit Form.
                     $.ajax({
@@ -318,6 +318,15 @@
     </div>
   </div>
   
+    <div class="form-row">
+   
+    <div class="form-group col-md-5">
+      <p align="left"><label for="img">NVeg</label>
+      <input id="nveg" class="form-control" placeholder="0 or 1">  
+      </p> 
+    </div>
+  </div>
+
   <br><br><br>
   <button type="submit" class="btn btn-primary" onclick="mSubmit()">SAVE</button>
 </form>
@@ -515,6 +524,7 @@
         <th>IPrice</th>
         <th>Description</th>
         <th>img</th>
+        <th>NVeg  </th>
       </tr>
     </thead>
     <tbody>
@@ -531,7 +541,7 @@
                 ResultSet rs = stmt.executeQuery(strQuery);
                 while(rs.next())
                 {
-                  out.println("<tr><td>"+rs.getString(1)+"</td><td>"+rs.getString(2)+"</td><td>"+rs.getString(3)+"</td><td>"+rs.getString(4)+"</td><td>"+rs.getString(5)+"</td><td>"+rs.getString(6)+"</td></tr>");
+                  out.println("<tr><td>"+rs.getString(1)+"</td><td>"+rs.getString(2)+"</td><td>"+rs.getString(3)+"</td><td>"+rs.getString(4)+"</td><td>"+rs.getString(5)+"</td><td>"+rs.getString(6)+"</td><td>"+rs.getString(7)+"</td></tr>");
                 }
                 response.setStatus(200);
                 stmt.close();
@@ -577,6 +587,41 @@
             }catch(Exception e){out.println(e);}
           %>
   </tbody>
+  </table>
+  <h2>Delivery</h2>
+       <table class="table table-bordered table-hover table-info" id="Feedback">
+    <thead>
+      <tr>
+        <th>OID</th>
+        <th>EID</th>
+        <th>Xcoord</th>
+        <th>Ycoord</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%
+         try
+            { 
+                String val11=request.getParameter("rname");
+                Class.forName("com.mysql.jdbc.Driver");
+
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/GRABHUB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "pritam", "pritam");
+
+                Statement stmt = conn.createStatement();
+                String strQuery = "SELECT * FROM delivery ";
+                ResultSet rs = stmt.executeQuery(strQuery);
+                while(rs.next())
+                {
+                  out.println("<tr><td>"+rs.getString(1)+"</td><td>"+rs.getString(2)+"</td><td>"+rs.getString(3)+"</td><td>"+rs.getString(4)+"</td></tr>");
+                }
+                response.setStatus(200);
+                stmt.close();
+                conn.close();
+              
+            }catch(Exception e){out.println(e);}
+          %>
+  </tbody>
+</table>
 </table>
 	<h2>Feedback</h2>
        <table class="table table-bordered table-hover table-info" id="Feedback">
