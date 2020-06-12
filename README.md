@@ -1,6 +1,6 @@
 # GRABHUB (Food Delivery Website)
 A simple food delivery website with database support. Users can order food using Cash on Delivery option or their desired Payment method.
-They can view the restaurant details including its location. Once an order is placed they will be assigned a food delivery partner who will then deliver it to their location.
+They can view the restaurant details including its location. Our interface will also show the time needed to deliver the customer's food. Once an order is placed they will be assigned a food delivery partner (details will be shared) who will then deliver it to their location.
 
 <p align="center">
    <br><br>
