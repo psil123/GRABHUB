@@ -4,19 +4,19 @@ They can view the restaurant details including its location. Once an order is pl
 
 <p align="center">
    <br><br>
-   Welcome Page
+   <b>Welcome Page</b>
   <img src="https://github.com/psil123/GRABHUB/blob/master/resources/images/demo1.JPG" border="0"/>
   <br><br>
-   Restaurant List
+   <b>Restaurant List</b>
   <img src="https://github.com/psil123/GRABHUB/blob/master/resources/images/demo2.JPG" border="0"/>
   <br><br>
-   Restaurant Menu
+   <b>Restaurant Menu</b>
   <img src="https://github.com/psil123/GRABHUB/blob/master/resources/images/demo3.JPG" border="0"/>
   <br><br>
-   Restaurant Cart
+   <b>Restaurant Cart</b>
   <img src="https://github.com/psil123/GRABHUB/blob/master/resources/images/demo4.JPG" border="0"/>
   <br><br>
-   Admin Panel
+   <b>Administrative Panel</b>
   <img src="https://github.com/psil123/GRABHUB/blob/master/resources/images/demo5.JPG" border="0"/>
 </p>
 ### Prerequisites
