@@ -2,6 +2,7 @@
 A simple food delivery website with database support. Users can order food using Cash on Delivery option or their desired Payment method.
 They can view the restaurant details including its location. Once an order is placed they will be assigned a food delivery partner who will then deliver it to their location.
 
+![Screenshot](https://github.com/psil123/GRABHUB/tree/master/resources/images/demo1.JPG)
 
 ### Prerequisites
 
