@@ -139,7 +139,7 @@
                                     type: "POST",
                                     url: "fixDBoy.jsp",
                                     cache: false,
-                                    data:"oid="+oid+"&eid="+dboy,
+                                    data:"oid="+oid+"&eid="+dboy+"&Xcoord="+document.getElementById('dX').innerText+"&Ycoord="+document.getElementById('dY').innerText,
                                     async:false,
                                     success: function(result)
                                     {
