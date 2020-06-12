@@ -37,7 +37,7 @@ Deployment on a local PC:
 *	Open XAMPP and start both MySQL and Tomcat 
 *	Open a web browser (i.e. Google Chrome or Mozilla Firefox).
 *	Visit phpmyadmin using : localhost/phpmyadmin
-* Create en empty database GRABHUB
+* Create en empty database "granhub"
 * Now execute createDB.jsp using localhost/GRABHUB/createDB.jsp (This will create all the necessary database tables)
 * Your Setup is complete
 * Visit localhost/GRABHUB/index.html to begin your journey (Signup to create an account and then login)
@@ -57,4 +57,4 @@ Deployment on a local PC:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/psil123/GRABHUB/LICENSE.md) file for details
