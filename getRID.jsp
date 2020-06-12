@@ -12,10 +12,8 @@
 				int rid=-1;
 				while(rs.next())
 					rid = Integer.parseInt(rs.getString(1));
-				//out.println(oid);
 				out.write(new Integer(rid).toString());
 				response.setStatus(200);
-				//response.sendRedirect(redirectURL);
 				stmt.close();
 				conn.close();
 				  

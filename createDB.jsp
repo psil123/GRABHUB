@@ -50,13 +50,13 @@
 				stmt.executeUpdate(create);
 
 
-				create="INSERT INTO Users values (1,\'Arjya Das\',\'arjyadas@gmail.com\',\'arjya\',\'9876543210\')";
+				create="INSERT INTO Users values (1,\'Arjya Das\',\'adas@gmail.com\',\'arjya\',\'9876543210\')";
 				stmt.executeUpdate(create);
-                                create="INSERT INTO Users values (2,\'Pritam Sil\',\'psil23ml@gmail.com\',\'pritam\',\'9876543210\')";
-                                stmt.executeUpdate(create);
-				create="INSERT INTO Users values (3,\'Koyel Nath\',\'koyelnath@gmail.com\',\'koyel\',\'9876543012\')";
+                create="INSERT INTO Users values (2,\'Pritam Sil\',\'psil123@gmail.com\',\'pritam\',\'9876543210\')";
+                stmt.executeUpdate(create);
+				create="INSERT INTO Users values (3,\'Koyel Nath\',\'knath@gmail.com\',\'koyel\',\'9876543012\')";
 				stmt.executeUpdate(create);
-				create="INSERT INTO Users values (4,\'Navin\',\'here444@gmail.com\',\'gunjan\',\'9876345210\')";
+				create="INSERT INTO Users values (4,\'Navin\',\'here444@gmail.com\',\'navin\',\'9876345210\')";
 				stmt.executeUpdate(create);
 
 				create="INSERT INTO Restaurant values (1,\'Fried N Grill\',\'friedngrill@gmail.com\',\'Addr1\',\'6712356078\',\'Fast food,Burger\',\'img2.jpg\',\'4.7\',389,88.4156,22.5912)";
