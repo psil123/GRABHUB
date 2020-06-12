@@ -2,8 +2,18 @@
 A simple food delivery website with database support. Users can order food using Cash on Delivery option or their desired Payment method.
 They can view the restaurant details including its location. Once an order is placed they will be assigned a food delivery partner who will then deliver it to their location.
 
-![Screenshot](https://github.com/psil123/GRABHUB/tree/master/resources/images/demo1.JPG)
-
+<p align="center">
+   <br><br>
+  <img src="https://github.com/psil123/GRABHUB/tree/master/resources/images/demo1.JPG" border="0">
+  <br><br>
+  <img src="https://github.com/psil123/GRABHUB/tree/master/resources/images/demo2.JPG" border="0">
+  <br><br>
+  <img src="https://github.com/psil123/GRABHUB/tree/master/resources/images/demo3.JPG" border="0">
+  <br><br>
+  <img src="https://github.com/psil123/GRABHUB/tree/master/resources/images/demo4.JPG" border="0">
+  <br><br>
+  <img src="https://github.com/psil123/GRABHUB/tree/master/resources/images/demo5.JPG" border="0">
+</p>
 ### Prerequisites
 
 Install XAAMP in your pc or host this in an online sever hosting jsp
