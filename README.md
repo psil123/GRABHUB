@@ -19,6 +19,7 @@ They can view the restaurant details including its location. Once an order is pl
    <b>Administrative Panel</b>
   <img src="https://github.com/psil123/GRABHUB/blob/master/resources/images/demo5.JPG" border="0"/>
 </p>
+
 ### Prerequisites
 
 Install XAAMP in your pc or host this in an online sever hosting jsp
