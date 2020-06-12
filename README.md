@@ -4,15 +4,20 @@ They can view the restaurant details including its location. Once an order is pl
 
 <p align="center">
    <br><br>
-  <img src="https://github.com/psil123/GRABHUB/tree/master/resources/images/demo1.JPG" border="0">
+   Welcome Page
+  <img src="https://github.com/psil123/GRABHUB/blob/master/resources/images/demo1.JPG" border="0"/>
   <br><br>
-  <img src="https://github.com/psil123/GRABHUB/tree/master/resources/images/demo2.JPG" border="0">
+   Restaurant List
+  <img src="https://github.com/psil123/GRABHUB/blob/master/resources/images/demo2.JPG" border="0"/>
   <br><br>
-  <img src="https://github.com/psil123/GRABHUB/tree/master/resources/images/demo3.JPG" border="0">
+   Restaurant Menu
+  <img src="https://github.com/psil123/GRABHUB/blob/master/resources/images/demo3.JPG" border="0"/>
   <br><br>
-  <img src="https://github.com/psil123/GRABHUB/tree/master/resources/images/demo4.JPG" border="0">
+   Restaurant Cart
+  <img src="https://github.com/psil123/GRABHUB/blob/master/resources/images/demo4.JPG" border="0"/>
   <br><br>
-  <img src="https://github.com/psil123/GRABHUB/tree/master/resources/images/demo5.JPG" border="0">
+   Admin Panel
+  <img src="https://github.com/psil123/GRABHUB/blob/master/resources/images/demo5.JPG" border="0"/>
 </p>
 ### Prerequisites
 
