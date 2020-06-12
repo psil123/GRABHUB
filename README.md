@@ -57,4 +57,4 @@ Deployment on a local PC:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/psil123/GRABHUB/LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
